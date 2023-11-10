@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "612946081057",
+    "project_id": "alpha-version-chessroyale",
+    "storage_bucket": "alpha-version-chessroyale.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612946081057:android:560d2ee26e35563f1bba60",
+        "android_client_info": {
+          "package_name": "com.example.alphaversionchessroyale"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBllNNTN8qEvlmmsMoImCpySYbgWn0cfZ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
