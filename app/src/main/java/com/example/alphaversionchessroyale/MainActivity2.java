@@ -96,6 +96,8 @@ public class MainActivity2 extends AppCompatActivity {
         if (st.equals("Activity 1")) {
             startActivity(new Intent(MainActivity2.this, MainActivity.class));
         } else if (st.equals("Activity 3")) {
+            startActivity(new Intent(MainActivity2.this, MainActivity3.class));
+
 
         } else if (st.equals("Activity 4")) {
 
