@@ -1,12 +1,16 @@
 package com.example.alphaversionchessroyale;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity4 extends AppCompatActivity {
@@ -60,5 +64,29 @@ public class MainActivity4 extends AppCompatActivity {
             int colorRes = (x + y) % 2 == 0 ? R.color.white : R.color.black;
             setBackgroundColor(getResources().getColor(colorRes)); // Set the color of the cell
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.main,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+
+    public boolean onOptionsItemSelected(@NonNull MenuItem item){
+        String st = item.getTitle().toString();
+        if (st.equals("Activity 1")) {
+            startActivity(new Intent(MainActivity4.this, MainActivity.class));
+        } else if (st.equals("Activity 2")) {
+            startActivity(new Intent(MainActivity4.this, MainActivity2.class));
+
+
+        } else if (st.equals("Activity 3")) {
+            startActivity(new Intent(MainActivity4.this, MainActivity3.class));
+
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
