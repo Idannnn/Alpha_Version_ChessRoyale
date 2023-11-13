@@ -100,6 +100,8 @@ public class MainActivity2 extends AppCompatActivity {
 
 
         } else if (st.equals("Activity 4")) {
+            startActivity(new Intent(MainActivity2.this, MainActivity4.class));
+
 
         }
         return super.onOptionsItemSelected(item);

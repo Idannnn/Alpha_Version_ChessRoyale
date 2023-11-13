@@ -92,6 +92,8 @@ public class MainActivity3 extends AppCompatActivity {
 
 
         } else if (st.equals("Activity 4")) {
+            startActivity(new Intent(MainActivity3.this, MainActivity4.class));
+
 
         }
         return super.onOptionsItemSelected(item);
